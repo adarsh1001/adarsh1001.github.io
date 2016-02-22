@@ -1,18 +1,277 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Official Website of Adarsh Pal Singh!</title>
+<meta charset="utf-8" />
+<title>Official Website of Adarsh Pal Singh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="blueberry.css" />
+<style type="text/css">
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+body {
+	background: #f0f0f0;
+	font: 14px/20px Arial, San-Serif;
+	color: #555;
+	margin: 0;
+}
+h1 {
+	text-align: center;
+	font-size: 180%;
+	line-height: 120%;
+	padding: 5% 0;
+}
+h2 {
+	text-decoration: underline;
+	line-height: 280%;
+	padding-left: 2%;
+}
+h3 {
+	line-height: 110%;
+	padding: 5% 0;
+}
+p {
+	padding: 1%;
+}
+img {
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+a {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color: #FFF;
+	text-decoration: underline;
+
+}
+header {
+	background: #405580;
+	width: 100%;
+	height: 86px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	opacity: 0.90;
+
+}
+#logo {
+	margin: 20px;
+	float: left;
+	width: 264px;
+	height: 60px;
+	background: url(images/LOGO.jpg) no-repeat center;
+}
+nav {
+	float: right;
+	padding: 35px 20px 20px 0; 
+}
+#menu-icon {
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: url(images/icon.png) center;
+}
+a:hover#menu-icon {
+	border-radius: 4px 4px 0 0;
+}
+ul {
+	list-style: none;
+
+}
+nav ul li {
+	display: inline-block;
+	float: left;
+	padding: 10px;
+}
+.current {
+	color: #FFF;
+	text-decoration: underline;
+}
+#doc {
+	margin: 40px 0;
+}
+#content {
+	margin: 0 auto;
+	max-width: 1140px;
+	margin-top: 110px;
+}
+.blueberry {
+	max-width: 960px;
+	margin-top: 110px;
+}
+section {
+	width: 29%;
+	float: left;
+	margin: 2% 2%;
+	text-align: center;
+}
+.clear {
+	clear:both;
+}
+article {
+	float: left;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+	padding: 4%;
+}
+aside {
+	float: right;
+	margin: 0 auto;
+	width: 35%;
+	height: auto;
+	padding: 3%;
+
+}
+ul.gym li {
+	padding-left: 3%;
+}
+footer {
+	background: #333333;
+	width: 100%;
+	overflow: hidden;
+	opacity: 0.90;
+}
+footer p, footer h3 {
+	color: #FFF;
+
+}
+footer p, a {
+	color: #FFF;
+	text-decoration: none;
+}
+ul.social li {
+	display: inline;
+}
+ul.social li img {
+	height: 50px;
+}
+footer.second {
+	border-top: 1px solid #4D4E50;
+	background-color: #333333;
+	max-height: 50px;
+	text-align: center;
+	opacity: 0.95;
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="jquery.blueberry.js"></script>
+
+<script>
+	$(window).load(function() {
+		$('.blueberry').blueberry();
+	});
+</script>
 </head>
-
 <body>
-<h1 style="text-align:center">Welcome!</h1>
-<p>My name, as you can probably guess from the title of the page, is <em>Adarsh Pal Singh</em>. I'm currently pursuing BE in <em>Electronics
-and Telecommunication</em> at Army Institute of Technology, Pune (University of Pune). </p>
-<p>I purchased this domain name recently. I don't usually get a lot of free time but when I do, I'll definitely work and make
-this page into a real classy website using HTML & CSS. </P>
-<p><strong>Cheers!</strong> 
-</body>
+	<header>
+		<a href="#" id="logo"></a>
+		<nav> 
+			<a href="#" id="icon"></a>
+			<ul>
+				<li><a href="#" class="current">Home</a></li>
+				<li><a href="#">About Me</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Resume</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="doc">
+		<div id="content">
+			<div class="blueberry">
+				<ul class="slides">
+					<li><img src="images/MII.jpg" /></li>
+					<li><img src="images/IEEE.JPG" /></li>
+					<li><img src="images/LCD.jpg" /></li>
+					<li><img src="images/INDIA@75.jpg" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<section>
+		<img src="images/BBB.jpg" />
+		<h1>BeagleBone Black</h1>
+		<p>I was introduced to BBB during my Winter Internship at NSIT, New Delhi. Being an old Linux user, I didn't have any problems adjusting to this new Embedded environment. I've done some interesting projects on it so do check 'em out!</p>
+	</section>
+	<section>
+		<img src="images/ARDUINO.jpg" />
+		<h1>Arduino</h1>
+		<p>My first Embedded Platform! I've played a lot with Uno in my first year of engineering and done some really cool projects. I still use it often because of its simplicity and endless online support.</p>
+	</section>
+	<section>
+		<img src="images/TIVA.jpg" />
+		<h1>Tiva: ARM Cortex M4</h1>
+		<p>This is a new platform for me. I'm following an EdX course on Embedded Systems to get myself acquinted with ARM Architecture and Embedded C. I've only done some simple tasks with Tiva as of now.</p>
+	</section>
+	<div class="clear"></div>
+	<article>
+		<img src="images/ME.jpg" />
+	</article>
+	<aside>
+		<h2>Daily Schedule</h2>
+		<ul class="gym">
+			<!--<li><h3>College 9:15 AM - 4:15 PM</h3></li>
+			<li><h3>Project/Extra Studies 4:30 PM - 7:30 PM</h3></li>
+			<li><h3>Dinner 7:30 PM - 8 PM</h3></li>
+			<li><h3>Study Time/File Work 8 PM - 12 AM </h3></li>
+			<li><h3>Sleep 1:30 ~ 2 AM - 8:30 AM</h3></li> -->
+			<p>Hey Guys!!! First of all, thanks for visiting my website! My name, as you can probably guess from the URL, is Adarsh Pal Singh. I'm a 2nd year engineering student pursuing my bachelors in Electronics and Telecommunication from Army Institute of Technology, Pune (University of Pune).
+			<br><br>I made this website to showcase my projects. My area of interest lies in Embedded Systems design. I've done a lot of work in Image processing and the fascinating concept of Internet of Things. 
 
+		</ul>
+	</aside>
+	<div class="clear"></div>
+	<section>
+		<h1>Smart Doorbell(IoT)</h1>
+		<img src="images/CLOCK.jpg" />
+		<p>Currently pursuing BE in Electronics and Telecommunication in Army Institute of Technology, Pune.</p>
+	</section>
+	<section>
+		<h1>Traffic Forecast</h1>
+		<img src="images/CLOCK.jpg" />
+		<p>Currently pursuing BE in Electronics and Telecommunication in Army Institute of Technology, Pune.</p>
+	</section>
+	<section>
+		<h1>Bluetooth Clock</h1>
+		<img src="images/CLOCK.jpg" />
+		<p>Currently pursuing BE in Electronics and Telecommunication in Army Institute of Technology, Pune.</p>
+	</section>
+	<footer>
+	<section>
+		<h3><b>Adarsh Pal Singh</b></h3>
+		<p><b>+917030310885</b><br><br>
+		211B, Old Boys Hostel,<br>
+		Army Institute of Technology,<br>
+		Dighi Hills, Pune (India)<br>
+		adarshsingh_14174@aitpune.edu.in</p>
+	</section>
+	<section>
+		<h3>Connect With Me!</h3>
+		<ul class="social">
+			<li><a href="#"><img src="images/facebook1.png" /></a></li>
+			<li><a href="#"><img src="images/googleplus.png" /></a></li>
+			<li><a href="#"><img src="images/twitter1.png" /></a></li>
+			<li><a href="#"><img src="images/youtube1.png" /></a></li>
+		</ul>
+	</section>
+	<section>
+		<img src="images/ic.png" />
+	</section>
+	</footer>
+	<footer class="second">
+		<p>©Copyright - Adarsh Pal Singh, 2016.</p>
+	</footer>
+
+</body>
 </html>
 
