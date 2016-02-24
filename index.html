@@ -18,7 +18,7 @@ body {
 	margin: 0;
 }
 h1 {
-	text-align: center;
+	text-align:center;
 	font-size: 180%;
 	line-height: 120%;
 	padding: 5% 0;
@@ -79,7 +79,7 @@ nav {
 	height: 40px;
 	background: url(images/icon.png) center;
 }
-a:hover#menu-icon {
+a:hover #menu-icon {
 	border-radius: 4px 4px 0 0;
 }
 ul {
@@ -133,6 +133,16 @@ aside {
 }
 ul.gym li {
 	padding-left: 3%;
+}
+a.yo {
+	color: #405580;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover.yo {
+	color: #405580;
+	text-decoration: underline;
+	
 }
 footer {
 	background: #333333;
@@ -215,7 +225,6 @@ footer.second {
 	}
 }
 
-
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script src="jquery.blueberry.js"></script>
@@ -235,7 +244,7 @@ footer.second {
 				<li><a href="#" class="current">Home</a></li>
 				<li><a href="#">About Me</a></li>
 				<li><a href="#">Projects</a></li>
-				<li><a href="#">Resume</a></li>
+				<li><a href="AdarshPalSingh.pdf" target="_blank">Resume</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -243,10 +252,10 @@ footer.second {
 		<div id="content">
 			<div class="blueberry">
 				<ul class="slides">
-					<li><img src="images/MII.jpg" /></li>
-					<li><img src="images/IEEE.JPG" /></li>
-					<li><img src="images/LCD.jpg" /></li>
-					<li><img src="images/INDIA.75.jpg" /></li>
+					<li><img src="images/IEEE.JPG" title="IEEE Conference ICIC 2015 at COEP"/></li>
+					<li><img src="images/MII.jpg" title="Make In India 2016 Hackathon!" /></li>
+					<li><img src="images/MII2.jpg" title="Addressing the Jury@ Make In India Hackathon"/></li>
+					<li><img src="images/INDIA@75.jpg" title="Received Jury Special Award at CII Hackathon"/></li>
 				</ul>
 			</div>
 		</div>
@@ -268,10 +277,10 @@ footer.second {
 	</section>
 	<div class="clear"></div>
 	<article>
-		<img src="images/ME.jpg" />
+		<img src="images/LCD.jpg" />
 	</article>
 	<aside>
-		<h2>Introduction</h2>
+		<h2>A Short Intro</h2>
 		<ul class="gym">
 			<!--<li><h3>College 9:15 AM - 4:15 PM</h3></li>
 			<li><h3>Project/Extra Studies 4:30 PM - 7:30 PM</h3></li>
@@ -279,25 +288,26 @@ footer.second {
 			<li><h3>Study Time/File Work 8 PM - 12 AM </h3></li>
 			<li><h3>Sleep 1:30 ~ 2 AM - 8:30 AM</h3></li> -->
 			<p>Hey Guys!!! First of all, thanks for visiting my website! My name, as you can probably guess from the URL, is Adarsh Pal Singh. I'm a 2nd year engineering student pursuing my bachelors in Electronics and Telecommunication from Army Institute of Technology, Pune (University of Pune).
-			<br><br>I made this website to showcase my projects. My area of interest lies in Embedded Systems design. I've done a lot of work in Image processing and the fascinating concept of Internet of Things. 
+			<br><br>I made this website to showcase my projects. Being a second year student, I still don't have a fixed domain. However, up until now, I've done most of my projects on Embedded Systems. Some of these were normal module based like my Bluetooth Digital clock while others were based on IoT and basic image processing such as my Smart Doorbell project on BBB. 
+			<br><br>My aim is to purse my Masters in an outstanding University like MIT, CalTech and finally get into a Space Organization to achieve my life long dream.  
 
 		</ul>
 	</aside>
 	<div class="clear"></div>
 	<section>
-		<h1>Smart Doorbell(IoT)</h1>
-		<img src="images/CLOCK.jpg" />
-		<p>Currently pursuing BE in Electronics and Telecommunication in Army Institute of Technology, Pune.</p>
+		<h1>Smart Doorbell</h1>
+		<img src="images/Doorbell.png" />
+		<p>This is an IoT based project on BBB. The idea is that whenever someone presses your doorbell, a quick snap is taken and the person is given 5s to record a message. Both these files are sent to your WhatsApp account. <a class="yo" href = "#" >Read more...</a></p>
 	</section>
 	<section>
 		<h1>Traffic Forecast</h1>
-		<img src="images/CLOCK.jpg" />
-		<p>Currently pursuing BE in Electronics and Telecommunication in Army Institute of Technology, Pune.</p>
+		<img src="images/Traffic.png" />
+		<p>A BBB/RasPi is placed on traffic lights with camera to dynamically change traffic timer using image processing. 2nd part is an app that automatically updates user with real time pics of road by tracking GPS. <a class="yo" href = "#" >Read more...</a> </p>
 	</section>
 	<section>
 		<h1>Bluetooth Clock</h1>
 		<img src="images/CLOCK.jpg" />
-		<p>Currently pursuing BE in Electronics and Telecommunication in Army Institute of Technology, Pune.</p>
+		<p>In this project, a 16x2 LCD module was interfaced with Arduino along with LM-35 temperature sensor and HC-05 bluetooth module. Time can be set wirelessly using a Bluetooth terminal on any smartphone. <a class="yo" href = "#" >Read more...</a> </p>
 	</section>
 	<footer>
 	<section>
@@ -311,10 +321,10 @@ footer.second {
 	<section>
 		<h3>Connect With Me!</h3>
 		<ul class="social">
-			<li><a href="#"><img src="images/facebook1.png" /></a></li>
+			<li><a href="https://www.facebook.com/adarsh1001"><img src="images/facebook1.png" /></a></li>
 			<li><a href="#"><img src="images/googleplus.png" /></a></li>
 			<li><a href="#"><img src="images/twitter1.png" /></a></li>
-			<li><a href="#"><img src="images/youtube1.png" /></a></li>
+			<li><a href="#" ><img src="images/youtube1.png" /></a></li>
 		</ul>
 	</section>
 	<section>
@@ -327,4 +337,3 @@ footer.second {
 
 </body>
 </html>
-
