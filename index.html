@@ -1,339 +1,873 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<meta charset="utf-8" />
-<title>Adarsh Pal Singh</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="blueberry.css" />
-<style type="text/css">
-* {
-	margin: 0;
-	border: 0;
-	padding: 0;
-}
-body {
-	background: #f0f0f0;
-	font: 14px/20px Arial, San-Serif;
-	color: #555;
-	margin: 0;
-}
-h1 {
-	text-align:center;
-	font-size: 180%;
-	line-height: 120%;
-	padding: 5% 0;
-}
-h2 {
-	text-decoration: underline;
-	line-height: 280%;
-	padding-left: 2%;
-}
-h3 {
-	line-height: 110%;
-	padding: 5% 0;
-}
-p {
-	padding: 1%;
-}
-img {
-	text-align: center;
-	max-width: 100%;
-	height: auto;
-	width: auto;
-}
-a {
-	color: #FFF;
-	text-decoration: none;
-	font-weight: bold;
-}
-a:hover {
-	color: #FFF;
-	text-decoration: underline;
 
-}
-header {
-	background: #405580;
-	width: 100%;
-	height: 86px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 100;
-	opacity: 0.90;
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>man adarsh_pal_singh</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-}
-#logo {
-	margin: 15px;
-	float: left;
-	width: 200px;
-	height: 60px;
-	background: url(images/LOGO.jpg) no-repeat center;
-}
-nav {
-	float: right;
-	padding: 35px 20px 20px 0;
-}
-#menu-icon {
-	display: hidden;
-	width: 40px;
-	height: 40px;
-	background: url(images/icon.png) center;
-}
-a:hover #menu-icon {
-	border-radius: 4px 4px 0 0;
-}
-ul {
-	list-style: none;
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-}
-nav ul li {
-	display: inline-block;
-	float: left;
-	padding: 10px;
-}
-.current {
-	color: #FFF;
-	text-decoration: underline;
-}
-#doc {
-	margin: 40px 0;
-}
-#content {
-	margin: 0 auto;
-	max-width: 1140px;
-	margin-top: 110px;
-}
-.blueberry {
-	max-width: 960px;
-	margin-top: 110px;
-}
-section {
-	width: 29%;
-	float: left;
-	margin: 2% 2%;
-	text-align: center;
-}
-.clear {
-	clear:both;
-}
-article {
-	float: left;
-	margin: 0 auto;
-	width: 50%;
-	height: auto;
-	padding: 4%;
-}
-aside {
-	float: right;
-	margin: 0 auto;
-	width: 35%;
-	height: auto;
-	padding: 3%;
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
 
-}
-ul.gym li {
-	padding-left: 3%;
-}
-a.yo {
-	color: #405580;
-	text-decoration: none;
-	font-weight: bold;
-}
-a:hover.yo {
-	color: #405580;
-	text-decoration: underline;
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
 
-}
-footer {
-	background: #333333;
-	width: 100%;
-	overflow: hidden;
-	opacity: 0.90;
-}
-footer p, footer h3 {
-	color: #FFF;
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.ico" >
 
-}
-footer p, a {
-	color: #FFF;
-	text-decoration: none;
-}
-ul.social li {
-	display: inline;
-}
-ul.social li img {
-	height: 50px;
-}
-footer.second {
-	border-top: 1px solid #4D4E50;
-	background-color: #333333;
-	max-height: 50px;
-	text-align: center;
-	opacity: 0.95;
-}
-@media screen and (max-width: 478px) {
-	body {
-		position: absolute;
-
-	}
-}
-@media screen and (max-width: 740px) {
-	header {
-		position: absolute;
-	}
-	#menu-icon {
-		display: inline-block;
-	}
-	nav ul, nav:active ul {
-		display: none;
-		position: absolute;
-		padding: 20px;
-		background: #405580;
-		border: 1px solid #FFF;
-		right: 20px;
-		top: 60px;
-		width: 50%;
-		border-radius: 2px 0 2px 2px;
-	}
-	nav li {
-		text-align: center;
-		width: 100%;
-		padding: 10px 0;
-		margin: 0;
-	}
-	nav:hover ul {
-		display: block;
-
-	}
-	section {
-		float: left;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	}
-	article {
-		float: left;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	}
-	aside {
-		float: left;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	}
-}
-
-</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-<script src="jquery.blueberry.js"></script>
-
-<script>
-	$(window).load(function() {
-		$('.blueberry').blueberry();
-	});
-</script>
 </head>
-<body>
-	<header>
-		<a href="#" id="logo"></a>
-		<nav>
-			<a href="#" id="menu-icon"></a>
-			<ul>
-				<li><a href="#" class="current">Home</a></li>
-				<li><a href="#">About Me</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="AdarshPalSingh.pdf" target="_blank">Resume</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div id="doc">
-		<div id="content">
-			<div class="blueberry">
-				<ul class="slides">
-					<li><img src="images/IEEE.JPG" title="IEEE Conference ICIC 2015 at COEP"/></li>
-					<li><img src="images/MII.jpg" title="Make In India 2016 Hackathon!" /></li>
-					<li><img src="images/MII2.jpg" title="Addressing the Jury@ Make In India Hackathon"/></li>
-					<li><img src="images/INDIA.75.jpg" title="Received Jury Special Award at CII Hackathon"/></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<section>
-		<img src="images/BBB.jpg" />
-		<h1>BeagleBone Black</h1>
-		<p>I was introduced to BBB during my Winter Internship at NSIT, New Delhi. Being an old Linux user, I didn't have any problems adjusting to this new Embedded environment. I've done some interesting projects on it so do check 'em out!</p>
-	</section>
-	<section>
-		<img src="images/ARDUINO.jpg" />
-		<h1>Arduino</h1>
-		<p>My first Embedded Platform! I've played a lot with Uno in my first year of engineering and done some really cool projects. I still use it often because of its simplicity and endless online support.</p>
-	</section>
-	<section>
-		<img src="images/TIVA.jpg" />
-		<h1>Tiva: ARM Cortex M4</h1>
-		<p>This is a new platform for me. I'm following an EdX course on Embedded Systems to get myself acquinted with ARM Architecture and Embedded C. I've only done some simple tasks with Tiva as of now.</p>
-	</section>
-	<div class="clear"></div>
-	<article>
-		<img src="images/LCD.jpg" />
-	</article>
-	<aside>
-		<h2>A Short Intro</h2>
-		<ul class="gym">
-			<!--<li><h3>College 9:15 AM - 4:15 PM</h3></li>
-			<li><h3>Project/Extra Studies 4:30 PM - 7:30 PM</h3></li>
-			<li><h3>Dinner 7:30 PM - 8 PM</h3></li>
-			<li><h3>Study Time/File Work 8 PM - 12 AM </h3></li>
-			<li><h3>Sleep 1:30 ~ 2 AM - 8:30 AM</h3></li> -->
-			<p>Hey Guys!!! First of all, thanks for visiting my website! My name, as you can probably guess from the URL, is Adarsh Pal Singh. I'm a 2nd year engineering student pursuing my bachelors in Electronics and Communication from International Institute of Information Technology, Hyderabad (IIIT-H).
-			<br><br>I made this website to showcase my projects. Being a second year student, I still don't have a fixed research domain. However, up until now, I've done most of my projects on Embedded Systems. Some of these were normal module based like my Bluetooth Digital clock while others were based on IoT and basic image processing such as my Smart Doorbell project on BBB.
-			<br><br>My aim is to purse my Masters in an outstanding University like MIT, CalTech and finally get into a Space Organization to achieve my life long dream.
 
-		</ul>
-	</aside>
-	<div class="clear"></div>
-	<section>
-		<h1>Smart Doorbell</h1>
-		<img src="images/Doorbell.png" />
-		<p>This is an IoT based project on BBB. The idea is that whenever someone presses your doorbell, a quick snap is taken and the person is given 5s to record a message. Both these files are sent to your WhatsApp account. <a class="yo" href = "#" >Read more...</a></p>
-	</section>
-	<section>
-		<h1>Traffic Forecast</h1>
-		<img src="images/Traffic.png" />
-		<p>A BBB/RasPi is placed on traffic lights with camera to dynamically change traffic timer using image processing. 2nd part is an app that automatically updates user with real time pics of road by tracking GPS. <a class="yo" href = "#" >Read more...</a> </p>
-	</section>
-	<section>
-		<h1>Bluetooth Clock</h1>
-		<img src="images/CLOCK.jpg" />
-		<p>In this project, a 16x2 LCD module was interfaced with Arduino along with LM-35 temperature sensor and HC-05 bluetooth module. Time can be set wirelessly using a Bluetooth terminal on any smartphone. <a class="yo" href = "#" >Read more...</a> </p>
-	</section>
-	<footer>
-	<section>
-		<h3><b>Adarsh Pal Singh</b></h3>
-		<p><b>+917030310885</b><br><br>
-		211B, Old Boys Hostel,<br>
-		Army Institute of Technology,<br>
-		Dighi Hills, Pune (India)<br>
-		adarshsingh_14174@aitpune.edu.in</p>
-	</section>
-	<section>
-		<h3>Connect With Me!</h3>
-		<ul class="social">
-			<li><a href="https://www.facebook.com/adarsh1001"><img src="images/facebook1.png" /></a></li>
-			<li><a href="https://plus.google.com/+AdarshPalSingh1996"><img src="images/googleplus.png" /></a></li>
-			<li><a href="https://twitter.com/_AdarshPalSingh"><img src="images/twitter1.png" /></a></li>
-			<li><a href="https://www.youtube.com/AdarshPalSingh" ><img src="images/youtube1.png" /></a></li>
-		</ul>
-	</section>
-	<section>
-		<img src="images/ic.png" />
-	</section>
-	</footer>
-	<footer class="second">
-		<p>©Copyright - Adarsh Pal Singh, 2016.</p>
-	</footer>
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="smoothscroll" href="#resume">Experience</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Resume.pdf" target="_blank">Resume</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">I'm Adarsh Pal Singh.</h1>
+            <h3>I'm currently pursuing my <span>MS (by Research)</span> from <span>IIIT Hyderabad</span>, India. I've done some 
+               cool stuff during the 5 years of my engineering so please scroll down 
+            to learn more <a class="smoothscroll" href="#about">about me</a>!</h3>
+            <hr />
+            <ul class="social">
+               <li><a href="https://www.facebook.com/adarsh1001" target="_blank"><i class="fa fa-facebook"></i></a></li>
+               <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+               <!--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+               <li><a href="https://www.linkedin.com/in/adarsh-pal-singh-3b1522172/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <!--<li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
+               <!--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
+               <li><a href="https://github.com/adarsh1001" target="_blank"><i class="fa fa-github"></i></a></li>
+               <li><a href="mailto:adarshpalsingh1996@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="images/adarsh_pro.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>My Journey In A Nutshell</h2>
+
+            <p>I'm a Bachelor's + MS by Research Dual Degree ECE student at IIIT Hyderabad, India. My MS is on the 
+               topic of Machine Learning for Smarter IoT Systems. 
+               I've published 2 papers as part of my MS and am currently working on my thesis. I've 
+               been the recepient of the Dean's List Award 6 times in a row for my academic performance. 
+               During the course of my engineering, I served in 2 different companies as an intern. The first one was 
+               the Linux Foundation where I interned for about 6 months in 2018. This was a remote open source internship 
+               wherein I collaborated with a team from Huawei (OPNFV Project) to develop a cloud-native stack for edge devices. 
+               I received the Gambia Community Award for my contributions to OPNFV and was the only undergrad speaker selected by
+               the Linux Foundation to deliver talks at the Open Networking Summit and the OPNFV Plugfest. In the 
+               summer of 2019, I interned in the AI/ML team of Ernst & Young, Bangalore. I had a dual role
+               of a DevOps as well as a Machine Learning Engineer. <br>
+               I'm an avid book reader. Some of my favorites include The Scarlet Letter, Maud's Line, The Girl On The Train, 
+               Surely You're Joking Mr. Feynman and The Martian. I also love reading Japanese manga. One Piece is my absolute 
+               favorite. I own an Ibanez acoustic guitar and can be found strumming to the Beatles or Oasis in the afternoons if 
+               I'm not in the badminton court or hooked to some Netflix series.
+
+            </p>
+
+            <div class="row">
+
+               <div class="columns download">
+                  <p>
+                     <a href="Resume.pdf" target="_blank" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1>Education</h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>International Institute of Information Technology (IIIT), Hyderabad</h3>
+                  <p class="info">B.Tech. (Hons.) & MS by Research in ECE <span>&bull;</span> <em class="date">Aug 2016 - Jun 2020</em></p>
+
+                  <p>
+                  Pursuing a dual degree programme in electronics and communication engineering. I have a <b>CGPA of 9.27/10</b> and 
+                  have been the recepient of the <b>Dean's List Award</b> 6 times in a row (semesters 3 to 8). Some of my favorite 
+                  subjects include- Statistical Methods in AI, Data Warehousing and Data Mining, Computer Vision, Algorithms and 
+                  Operating Systems, Communication Networks, Embedded Hardware Design, Linear Algebra and Graph Theory. My MS 
+                  is on the topic of Machine Learning for Smarter IoT. I've <b>published 2 international papers</b> as part of my MS. 
+                  I received the <b>Research List Award</b> for publishing my first paper during my undergrad. 
+                  I also served as the <b>Head TA</b> for the course Embedded Hardware Design in Monsoon 2017. My primary 
+                  job was to design lab experiments centered around Arduino and Xilinx Zedboard and take lab sessions every week.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1>Work Experience</h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Ernst & Young</h3>
+                  <p class="info">Machine Learning & DevOps Intern <span>&bull;</span> <em class="date">Bangalore, India</em> <span>&bull;</span> <em class="date">May 2019 - Aug 2019</em></p>
+
+                  <p>
+                     I was selected from campus for this internship among a pool of 300 IIITians. I interned for around 3 months 
+                     in the AI/ML team of E&Y. <br>
+                     Worked on the problem of clustering in high dimensional sentence embeddings
+                     (BERT, USE, XLNet). Also worked on optimizing the time and space complexity
+                     of some core algorithms like Nearest Neighbor for large databases. <br>
+                     Implemented a CI/CD pipeline from scratch in Azure DevOps for an end-to-end
+                     Docker-based deep learning application. <br>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Linux Foundation</h3>
+                  <p class="info">Edge Cloud Networking Intern <span>&bull;</span> <em class="date"><b><a href="https://github.com/opnfv/clover/tree/master/edge/sample" target="_blank" style="color: rgb(7, 89, 109)">Remote</a></b></em> <span>&bull;</span> <em class="date">May 2018 - Dec 2018</em></p>
+
+                  <p>
+                  I was selected as an <b><a href="https://wiki.opnfv.org/display/DEV/Intern+Project%3A+Edge+cloud+native+cluster" target="_blank" style="color: rgb(7, 89, 109)">LFN intern</a></b>
+                  in the OPNFV project for a period of 6 months. The crux of my work was to implement a kubernetes-based 
+                  small-footprint edge cluster supporting cloud-native framework and develop exemplar microservice-oriented 
+                  applications for the edge as well as the edge-cloud paradigm of the future. <br>
+                  In the first phase, a versatile Ansible script was developed to form a k8s cluster out of 2+ Raspberry Pi 3 
+                  devices. Exemplar microservice apps, containerized using Docker, were developed and tested on this edge cluster. 
+                  In particular, a low-latency real-time video streaming app employing UV4L was developed and tested. <br>
+                  The next phase focused on an edge-cloud paradigm for ML apps. A demo was created for ONS-18 which involved containerizing 
+                  a YOLO-based real-time object detector for this edge as well as GKE (with Nvidia P100 GPU) and highlighting 
+                  the pros and cons of a collaborative ML paradigm. <br>
+                  I received the <b><a href="https://wiki.opnfv.org/display/DEV/Gambia+Award+Winners" target="_blank" style="color: rgb(7, 89, 109)">Gambia Community Award</a></b> in the intern category. 
+                  I also got 2 opportunities to present my work- 
+                  one at the <b><a href="https://sched.co/FmsC" target="_blank" style="color: rgb(7, 89, 109)">Open Networking Summit</a></b>, 
+                  Amsterdam and another at the <b><a href="https://wiki.lfnetworking.org/display/LN/Topic+Proposals+for+Jan+%2719" target="_blank" style="color: rgb(7, 89, 109)">OPNFV Plugfest</a></b>, Paris and was the only 
+                  undergrad speaker in both the places.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+      <!-- Research Work
+      ----------------------------------------------- -->
+      <div class="row research work">
+
+         <div class="three columns header-col">
+            <h1>Research Experience</h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>SPCRC Lab, IIIT Hyderabad</h3>
+                  <p class="info">Research Student <span>&bull;</span> <em class="date">Hyderabad, India</em> <span>&bull;</span> <em class="date">May 2017 - May 2020</em></p>
+
+                  <p>
+                  Pursuing research under Dr. Sachin Chaudhari on the application of machine learning for smarter 
+                  IoT systems. As of August 2019, I'm a full-time Research Assistant in the SPCRC lab and have been 
+                  overseeing various government and industry sponsored projects as well.<br>
+                  Published two papers as part of my MS- one on the problem of offloading trained machine learning models to 
+                  constrained sensor nodes for data transmission reduction and another on machine learning-based human occupancy 
+                  estimation in rooms using non-intrusive sensor nodes. 
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Norwegian University of Science and Technology (NTNU), Trondheim</h3>
+                  <p class="info">Research Intern <span>&bull;</span> <em class="date">Trondheim, Norway</em> <span>&bull;</span> <em class="date">May 2018 - Jun 2018</em></p>
+
+                  <p>
+                     Worked under Prof. Stefan Werner and Dr. Frank Kraemer on robust machine
+                     learning-based IoT systems that work on a collaboration of edge and cloud.
+                     Also explored the problem of transfer learning in machine learning-based IoT applications.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Publications</h3>
+                  
+                     <ol>
+                        <li><b><a href="https://ieeexplore.ieee.org/document/8644432" target="_blank" style="color: rgb(7, 89, 109)">
+                           Machine Learning-Based Occupancy Estimation Using Multivariate Sensor Nodes</a></b>, IEEE Globecom
+                        Workshop (full workshop paper), Abu Dhabi, 2018.</li>
+                        <li><b><a href="#" style="color: rgb(7, 89, 109)">
+                           Embedded Machine Learning-Based Data Reduction In Application-Specific Constrained IoT Networks</a></b>
+                           , accepted in ACM SAC (full paper), Brno, Czech Republic, 2020.</li>
+                     </ol>
+                  
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skills">
+
+         <div class="three columns header-col">
+            <h1>Skills</h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p>I'm inclined towards Software Development, DevOps and Machine Learning.
+            </p>
+
+				<div class="bars">
+
+				   <ul class="skills">
+					   <li><span class="bar-expand photoshop"></span><em>Python3</em></li>
+                  <li><span class="bar-expand illustrator"></span><em>C, C++</em></li>
+						<li><span class="bar-expand wordpress"></span><em>Docker, Kubernetes</em></li>
+						<li><span class="bar-expand css"></span><em>Ansible, Jenkins, Azure DevOps</em></li>
+						<li><span class="bar-expand html5"></span><em>ML (Scikit, TF, PyTorch)</em></li>
+                  <li><span class="bar-expand jquery"></span><em>Linux SysAdmin</em></li>
+					</ul>
+
+				</div><!-- end skill-bars -->
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Some stuff that I've developed and talks that I've delivered.</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/portfolio/paris.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>OPNFV Plugfest, Paris 2019</h5>
+                              <p>Lightning Talk: Edge Cloud-Native Cluster</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/amsterdam.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Open Networking Summit, Amsterdam 2018</h5>
+                              <p>Lightning Talk: Edge of Tomorrow</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/portfolio/cluster.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Raspberry Pi Kubernetes Cluster</h5>
+                              <p>LFN Project</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/portfolio/segment.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Hand Segmentation Using RefineNet</h5>
+                              <p>Computer Vision Course Project</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-05" title="">
+                        <img alt="" src="images/portfolio/globecom.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>IEEE Globecom, Abu Dhabi 2018</h5>
+                              <p>Paper Presentation: Machine Learning-Based Occupancy Estimation</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-06" title="">
+                        <img alt="" src="images/portfolio/cansat.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>NASA's CanSat Competition 2018</h5>
+                              <p>World Rank 24</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-07" title="">
+                        <img alt="" src="images/portfolio/song.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Song Popularity Predictor</h5>
+                              <p>Statistical Methods in AI Course Project</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-08" title="">
+                        <img alt="" src="images/portfolio/eigen.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Faster Matrix Algebra Library For Symmetric Matrices In Eigen</h5>
+                              <p>Personal C++ Project</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+                </div>  <!-- item end -->
+                
+                <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-09" title="">
+                        <img alt="" src="images/portfolio/crypto.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Understanding And Predicting Trends In Cryptocurrency Prices</h5>
+                              <p>Data Mining Course Project</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-paris.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Lightning Talk: "Edge Cloud-Native Cluster", OPNFV Plugfest, Paris 2019</h4>
+			      <p>One of the biggest perks of interning in the Linux Foundation Networking (LFN) program is that you get a fully 
+                  sponsored trip to an LF event. Not only that, you also get to present your work as a 10-15 minute lightning talk to a 
+                  room full of industry experts! My internship concluded successfully in December 2018 and I began packing my bags 
+                  for this trip in the second week of January itself. <br>
+                  This time around (2019), the OPNFV plugfest was not a standalone LF event. Rather, a combined OPNFV Plugfest and 
+                  ONAP DDF took place for 4 whole days at Nokia Paris-Saclay. I got to attend tons of exciting talks and tutorials 
+                  that were undertaken by the developers from various companies like Redhat, China Mobile, Huawei, Intel. 
+                  The intern talks were scheduled early morning on the last day of the event. I've 
+                  attached my presentation below which is pretty self-explanatory.
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>Edge, Ansible, Docker, K8s, YOLOv3, Python, Bash</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="ppts/opnfv_plugfest.pdf" target="_blank">Presentation</a>
+               <a href="blog.html" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Blog Entry</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-amsterdam.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Lightning Talk: "Edge of Tomorrow: Deploying Collaborative Machine Intelligence to the Edge", Open Networking Summit, Amsterdam 2018</h4>
+               
+               <p>
+                  I was only halfway through my LFN internship when one day my mentor, Wenjing Chu, suggested that we should 
+                  submit a talk proposal for the Europe edition of the Open Networking Summit (2018). He was convinced that our
+                  work on edge-cloud and collaborative machine learning was something that companies would be interested in. And 
+                  sure enough, our proposal was accepted by LF to be presented as a 10 minute lightning talk. I've attached our 
+                  presentation below which is pretty much self-explanatory. <br>
+                  P.s. This was the first time I'd ever given a talk in a foreign country to a room full of industry experts. A 
+                  great experience indeed!
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>Edge, Ansible, Docker, K8s, YOLOv3, Python, Bash</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://events19.linuxfoundation.org/wp-content/uploads/2017/12/Edge-of-Tomorrow.pdf" target="_blank">Presentation</a>
+               <a href="blog.html" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Blog Entry</a>
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-cluster.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Raspberry Pi Kubernetes Cluster</h4>
+			      <p>
+                  As the heading suggests, this project revolves around the creation of a kubernetes cluster using 2 or more 
+                  Raspberry Pi devices (ARM-based). After manually playing with docker and kubernetes on the RPi for weeks, I 
+                  developed a versatile Ansible script that can create and disassemble clusters with ease. You can try it out 
+                  yourself if you own at least 2 Raspberry Pi devices. An exemplar containerized app is also included in the repo 
+                  which can help you get started with your own edge cluster-based projects. <br>
+                  A fully detailed guide and code can be found in the below link.
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>Ansible, Docker, Kubernetes, Bash</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/opnfv/clover/tree/master/edge/sample" target="_blank">Code</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-segment.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Hand Segmentation Using RefineNet</h4>
+			      <p>
+                  The aim of this project was to develop an egocentric hand segmentation model using RefineNet in Python3. 
+                  For this, we worked with two CVPR papers and replicated the results using our own implementation in PyTorch (the 
+                  authors had written the code in Matlab). The PyTorch implementation of RefineNet (which is a multipath 
+                  refinement network over ResNet) was done from scratch. After that, the model was trained on the standard 
+                  Pascal person-parts dataset with a new binary layer of hand and no-hand. The model was further fine-tuned on 
+                  four different ego-centric hands datasets. <br>
+                  The details about the implementation and the code can be found below.
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>Computer Vision, Semantic Segmentation, ResNet, RefineNet</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="ppts/hand_segmentation.pdf" target="_blank">Details</a>
+               <a href="https://github.com/adarsh1001/Hand_Segmentation_RefineNet" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Code</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-04 End -->
+
+         <div id="modal-05" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-globecom.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Paper Presentation: "Machine Learning-Based Occupancy Estimation Using Multivariate Sensor Nodes",
+                   IEEE Globecom, Abu Dhabi 2018
+               </h4>
+			      <p>
+                  This was my first international paper. As a rule, if an IEEE or ACM paper gets accepted for publication, 
+                  at least one of the authors is expected to attend the conference and present the paper. <br>
+                  Abstract- In buildings, a large chunk of energy is spent on heating, ventilation and air conditioning systems. 
+                  One way to optimize their usage is to make them demand-driven depending on human occupancy. 
+                  This paper focuses on accurately estimating the number of occupants in a room by leveraging multiple 
+                  heterogeneous sensor nodes and machine learning models. For this purpose, low-cost and non-intrusive 
+                  sensors such as CO2, temperature, illumination, sound and motion were used. The sensor nodes were 
+                  deployed in a room in a star configuration and measurements were recorded for a period of four days. 
+                  A regression based method is proposed for calculating the slope of CO2, a new feature derived from 
+                  real-time CO2 values. Supervised learning algorithms such as LDA, QDA, SVM and random forest (RF) were 
+                  used on several 
+                  different combinations of feature sets. Moreover, multiple performance metrics such as accuracy, F1 score 
+                  and confusion matrix were used to evaluate the performance of our models. Experimental results demonstrate 
+                  a maximum accuracy of 98.4% and a high F1 score of 0.953 for estimating the number of occupants in the room. 
+                  PCA was also applied to evaluate the performance of a dataset with reduced 
+                  dimensionality. <br>
+                  The presentation and the paper link can be found below.
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>Machine Learning, Internet of Things</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="ppts/globecom.pdf" target="_blank">Presentation</a>
+               <a href="https://ieeexplore.ieee.org/document/8644432" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Paper</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-05 End -->
+
+         <div id="modal-06" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-cansat.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>World Rank 24 at NASA's CanSat Competition 2018</h4>
+			      <p>
+                  Worked part-time for around 5 months on the CanSat 2018 mission statement along with 8 other IIITians. <br>
+                  The mission statement of CanSat 2018 was to construct a small satellite containing various sensors such as 
+                  temperature, pressure, accelerometer, voltage and GPS, a microcontroller and a communication radio. A payload 
+                  section was also to be designed for protecting a delicate instrument. During the final launch, an egg was put in this 
+                  section. The CanSat was also armed with a heat shield and a parachute. As per the problem statement, the 
+                  CanSat was to be dropped from a height of around 700m. It was expected to perform a series of manoeuvres such as 
+                  letting go of the heat shield and opening the parachute at certain altitudes, sending telemetry data to the 
+                  ground control every second and most importantly, remain steady enough to ensure that the egg in the payload 
+                  section doesn't break even after impact. <br>
+                  All of us in the CanSat team grew up watching science fiction movies. To create something like this from 
+                  scratch was an amazing experience. I still can't explain the feeling I got when I learnt that the egg in 
+                  our payload section didn't even have a scratch on it! For more details, please visit the following link.
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>Embedded Systems, Communication, Aerodynamics</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://blogs.iiit.ac.in/cansat/" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-06 End -->
+
+         <div id="modal-07" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-song.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Song Popularity Predictor</h4>
+			      <p>
+                  The aim of this project was to determine the popularity of songs using its musical features as well as other 
+                  song metrics. We started with the analysis of the million song dataset (MSD). The dataset required a lot of 
+                  preprocessing before it could be used in any way. After that, traditional machine learning models were 
+                  trained to classify songs into three categories- highly popular, popular and unpopular. Nearest neighbor 
+                  exhibited the highest accuracy. Next, we moved onto time-series based experiments as the songs are, of 
+                  course, time-series in nature. An LSTM was trained on the time-series features that we had earlier left out. 
+                  Since the MSD dataset was quite old, we collected our own dataset consisting of 889 current hit songs and 
+                  tested different models on that too. The features were extracted using the PyAudioAnalysis library. <br>
+                  The details about the implementation and the code can be found below.
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>Python3, Machine Learning, Time Series, HDF5</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="ppts/song_popularity.pdf" target="_blank">Details</a>
+               <a href="https://github.com/adarsh1001/Song-Popularity-Predictor" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;Code</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-07 End -->
+
+         <div id="modal-08" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-eigen.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Faster Matrix Algebra Library For Symmetric Matrices In C++ Eigen</h4>
+			      <p>
+                  This project was given as a GSoC project by the ATLAS team (part of the Large Hadron Collider project) in 
+                  2018. I was initally trying for this internship but then ended up taking the Linux Foundation internship instead. 
+                  However, I did complete most of the tasks laid out for the project on my own. <br>
+                  In this project, a standalone C++ class was built which can work with Symmetric Matrices on top of the 
+                  Eigen Library. Working only with the upper/lower triangular part of a symmetric matrix considerably reduces 
+                  the storage space as well as the complexity for different matrix operations. The code exhibits the use 
+                  of templates coupled with operator overloading.
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>C++, OOPS, Templates, Polymorphism</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/adarsh1001/Atlas_Eigen" target="_blank">Code</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div><!-- modal-08 End -->
+         
+         <div id="modal-09" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-crypto.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Understanding And Predicting Trends In Cryptocurrency Prices Using Data Mining Techniques</h4>
+			      <p>
+                  In a span of 10 years, we’ve witnessed the inception and
+                  gain in the popularity of the blockchain technology and cryptocurriences. Various cryptocurrencies 
+                  have come up and evolved in a short span of time. Just like the regular stock market, the trends of different
+                  cryptocurrency coin prices is of great importance to the cryptocurrency traders and investors. 
+                  However, unlike the stock market analysis which has been going on for decades, the cryptocurrency market is
+                  still referred to as "highly volatile" thereby giving motivation to researchers to contribute to this theme. <br>
+                  In this project, data mining techniques were employed to understand different factors affecting Bitcoin and 
+                  Etherium, and models were built that can predict different future trends of the market. First, a 
+                  binary classification problem was posed (rise/fall of price in a day) and supervised learning techniques
+                  were employed on the dataset. 
+                  More advanced time-series based techniques were also explored that could predict future values. A comparison 
+                  with regular stock market is also presented.
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>Python3, Machine Learning, Time-series</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="ppts/cryptocurrency.pdf" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-09 End -->
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>Testimonials</span></h1>
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p>I had the pleasure to supervise Adarsh as an intern in a Linux Foundation open source project. 
+                              I tend to give my interns an open ended problem to solve and see how far they can go. 
+                              Adarsh is one of the rare students who not only has the drive to reach far but also the skills and 
+                              dedication to pull it off. His work to investigate the benefit of edge computing with an online 
+                              object recognition algorithm is both practical and insightful. I highly recommend Adarsh to anyone.
+                           </p>
+                           <cite>Wenjing Chu, Head of Open Source and Research at Futurewei (Huawei) Technologies and Member of the Technical Advisory Council at The Linux Foundation, Santa Clara, CA.</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Testimonials Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+      <section id="connect">
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="https://www.facebook.com/adarsh1001" target="_blank"><i class="fa fa-facebook"></i></a></li>
+               <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+               <!--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+               <li><a href="https://www.linkedin.com/in/adarsh-pal-singh-3b1522172/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <!--<li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
+               <!--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
+               <li><a href="https://github.com/adarsh1001" target="_blank"><i class="fa fa-github"></i></a></li>
+               <li><a href="mailto:adarshpalsingh1996@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+      </section>
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
 
 </body>
+
 </html>
